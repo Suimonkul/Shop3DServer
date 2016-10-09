@@ -26,7 +26,7 @@ class ProductResource(ModelResource):
     category = fields.ForeignKey(CategoryResource, 'category', null=True)
 
     class Meta:
-        limit = 6
+        limit = 8
 
         queryset = Product.objects.all()
         resource_name = 'product'
